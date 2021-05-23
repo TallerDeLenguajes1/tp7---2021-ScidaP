@@ -59,23 +59,36 @@ namespace Tp6Calculadora {
         }
 
         private void button10_Click(object sender, EventArgs e) {
-            textBox1.Text += " + ";
+            if (textBox1.Text != "") {
+                textBox1.Text += " + ";
+            }
         }
 
         private void button11_Click(object sender, EventArgs e) {
-            textBox1.Text += " - ";
+            if (textBox1.Text != "") {
+                textBox1.Text += " - ";
+            }
         }
 
         private void button12_Click(object sender, EventArgs e) {
-            textBox1.Text += " * ";
+            if (textBox1.Text != "") {
+                textBox1.Text += " * ";
+            }
         }
 
         private void button13_Click(object sender, EventArgs e) {
-            textBox1.Text += " / ";
+            if (textBox1.Text != "") {
+                textBox1.Text += " / ";
+            }
         }
 
         private void button14_Click(object sender, EventArgs e) {
             textBox1.Text = "";
+        }
+
+        private void button15_Click(object sender, EventArgs e) { // Botón de igual
+            string operacion = textBox1.Text;
+            for (int i = 0; i < operacion.Length; i)
         }
     }
 }
