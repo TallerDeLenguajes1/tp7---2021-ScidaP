@@ -12,7 +12,8 @@ namespace Tp6Calculadora {
     public partial class Form1 : Form {
         Calculadora miCalculadora = new Calculadora();
         string operador;
-        int num1, num2, res;
+        float num1, num2, res;
+        int numeroValido = 0;
         public Form1() {
             InitializeComponent();
         }
@@ -25,12 +26,13 @@ namespace Tp6Calculadora {
 
         }
 
-        private void button14_Click(object sender, EventArgs e) {
+        private void button14_Click(object sender, EventArgs e) { // CLEAR
             textBox1.Text = "";
             label4.Text = "";
-            num1 = 0;
-            num2 = 0;
+            num1 = default(float);
+            num2 = default(float);
             operador = "";
+            numeroValido = 0;
         }
 
         private void button15_Click(object sender, EventArgs e) { // Botón de igual
@@ -62,6 +64,7 @@ namespace Tp6Calculadora {
                         num1 = int.Parse(textBox1.Text);
                         textBox1.Clear();
                     }
+                    numeroValido = 1;
                     break;
                 case "-":
                     operador = "-";
@@ -69,6 +72,7 @@ namespace Tp6Calculadora {
                         num1 = int.Parse(textBox1.Text);
                         textBox1.Clear();
                     }
+                    numeroValido = 1;
                     break;
                 case "/":
                     operador = "/";
@@ -76,6 +80,7 @@ namespace Tp6Calculadora {
                         num1 = int.Parse(textBox1.Text);
                         textBox1.Clear();
                     }
+                    numeroValido = 1;
                     break;
                 case "*":
                     operador = "*";
@@ -83,12 +88,13 @@ namespace Tp6Calculadora {
                         num1 = int.Parse(textBox1.Text);
                         textBox1.Clear();
                     }
+                    numeroValido = 1;
                     break;
                 default:
                     textBox1.Text += boton.Text;
                     break;
             }
-            if (num1 != 0) {
+            if (numeroValido == 1) {
                 label4.Text = num1.ToString();
             }
             label4.Text += operador;

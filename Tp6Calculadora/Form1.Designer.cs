@@ -271,6 +271,7 @@ namespace Tp6Calculadora {
             this.button16.TabIndex = 22;
             this.button16.Text = "0";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button_Click);
             // 
             // button17
             // 
