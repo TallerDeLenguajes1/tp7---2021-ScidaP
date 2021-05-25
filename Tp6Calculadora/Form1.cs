@@ -12,7 +12,7 @@ namespace Tp6Calculadora {
     public partial class Form1 : Form {
         Calculadora miCalculadora = new Calculadora();
         string operador;
-        float num1, num2, res;
+        float res;
         int numeroValido = 0;
         public Form1() {
             InitializeComponent();
@@ -29,30 +29,36 @@ namespace Tp6Calculadora {
         private void button14_Click(object sender, EventArgs e) { // CLEAR
             textBox1.Text = "";
             label4.Text = "";
-            num1 = default(float);
-            num2 = default(float);
+            miCalculadora.numero1 = default(float);
+            miCalculadora.numero2 = default(float);
             operador = "";
             numeroValido = 0;
         }
 
         private void button15_Click(object sender, EventArgs e) { // Botón de igual
-            num2 = int.Parse(textBox1.Text);
-            label4.Text += num2;
+            miCalculadora.numero2 = float.Parse(textBox1.Text);
+            label4.Text += miCalculadora.numero2;
             switch (operador) {
                 case "+":
-                    res = miCalculadora.Suma(num1, num2);
+                    res = miCalculadora.Suma(miCalculadora.numero1, miCalculadora.numero2);
                     break;
                 case "-":
-                    res = miCalculadora.Resta(num1, num2);
+                    res = miCalculadora.Resta(miCalculadora.numero1, miCalculadora.numero2);
                     break;
                 case "*":
-                    res = miCalculadora.Mult(num1, num2);
+                    res = miCalculadora.Mult(miCalculadora.numero1, miCalculadora.numero2);
                     break;
                 case "/":
-                    res = miCalculadora.Div(num1, num2);
+                    if (miCalculadora.numero2 != 0) {
+                        res = miCalculadora.Div(miCalculadora.numero1, miCalculadora.numero2);
+                    }
                     break;
             }
-            textBox1.Text = res.ToString();
+            if (operador == "/" && miCalculadora.numero2 == 0) {
+                textBox1.Text = "Error";
+            } else {
+                textBox1.Text = res.ToString();
+            }
         }
 
         private void button_Click(object sender, EventArgs e) {
@@ -61,7 +67,7 @@ namespace Tp6Calculadora {
                 case "+":
                     operador = "+"; // El operador va afuera del if, para que al tocar dos operadores seguidos, se reemplace en la operación.
                     if (textBox1.Text != "") { //Evito que el programa crashee al querer hacer una operacion de un valor vacío.
-                        num1 = int.Parse(textBox1.Text);
+                        miCalculadora.numero1 = float.Parse(textBox1.Text);
                         textBox1.Clear();
                     }
                     numeroValido = 1;
@@ -69,7 +75,7 @@ namespace Tp6Calculadora {
                 case "-":
                     operador = "-";
                     if (textBox1.Text != "") {
-                        num1 = int.Parse(textBox1.Text);
+                        miCalculadora.numero1 = float.Parse(textBox1.Text);
                         textBox1.Clear();
                     }
                     numeroValido = 1;
@@ -77,7 +83,7 @@ namespace Tp6Calculadora {
                 case "/":
                     operador = "/";
                     if (textBox1.Text != "") {
-                        num1 = int.Parse(textBox1.Text);
+                        miCalculadora.numero1 = float.Parse(textBox1.Text);
                         textBox1.Clear();
                     }
                     numeroValido = 1;
@@ -85,7 +91,7 @@ namespace Tp6Calculadora {
                 case "*":
                     operador = "*";
                     if (textBox1.Text != "") {
-                        num1 = int.Parse(textBox1.Text);
+                        miCalculadora.numero1 = float.Parse(textBox1.Text);
                         textBox1.Clear();
                     }
                     numeroValido = 1;
@@ -95,7 +101,7 @@ namespace Tp6Calculadora {
                     break;
             }
             if (numeroValido == 1) {
-                label4.Text = num1.ToString();
+                label4.Text = miCalculadora.numero1.ToString();
             }
             label4.Text += operador;
         }

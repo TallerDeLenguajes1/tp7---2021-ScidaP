@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tp6Calculadora {
     class Calculadora {
-        private float numero1, numero2;
+        public float numero1, numero2;
 
         public float Suma(float n1, float n2) {
             return n1 + n2;
@@ -19,11 +19,7 @@ namespace Tp6Calculadora {
             return n1 * n2;
         }
         public float Div(float n1, float n2) {
-            if (n2 != 0) {
-                return n1 / n2;
-            } else {
-                return 0;
-            }
+            return n1 / n2;
         }
     }
 }

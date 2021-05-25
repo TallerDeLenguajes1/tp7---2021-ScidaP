@@ -280,8 +280,9 @@ namespace Tp6Calculadora {
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(37, 33);
             this.button17.TabIndex = 23;
-            this.button17.Text = ".";
+            this.button17.Text = ",";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button_Click);
             // 
             // Form1
             // 
