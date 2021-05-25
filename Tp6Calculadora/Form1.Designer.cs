@@ -254,9 +254,9 @@ namespace Tp6Calculadora {
             // button15
             // 
             this.button15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button15.Location = new System.Drawing.Point(8, 296);
+            this.button15.Location = new System.Drawing.Point(94, 257);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(179, 38);
+            this.button15.Size = new System.Drawing.Size(93, 33);
             this.button15.TabIndex = 21;
             this.button15.Text = "=";
             this.button15.UseVisualStyleBackColor = true;
@@ -265,9 +265,9 @@ namespace Tp6Calculadora {
             // button16
             // 
             this.button16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button16.Location = new System.Drawing.Point(8, 257);
+            this.button16.Location = new System.Drawing.Point(51, 257);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(123, 33);
+            this.button16.Size = new System.Drawing.Size(37, 33);
             this.button16.TabIndex = 22;
             this.button16.Text = "0";
             this.button16.UseVisualStyleBackColor = true;
@@ -275,9 +275,9 @@ namespace Tp6Calculadora {
             // button17
             // 
             this.button17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button17.Location = new System.Drawing.Point(137, 257);
+            this.button17.Location = new System.Drawing.Point(8, 257);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(50, 33);
+            this.button17.Size = new System.Drawing.Size(37, 33);
             this.button17.TabIndex = 23;
             this.button17.Text = ".";
             this.button17.UseVisualStyleBackColor = true;
