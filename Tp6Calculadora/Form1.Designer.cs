@@ -163,6 +163,7 @@ namespace Tp6Calculadora {
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(176, 34);
             this.textBox1.TabIndex = 12;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // button10
             // 

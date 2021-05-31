@@ -37,22 +37,9 @@ namespace Tp6Calculadora {
 
         private void button15_Click(object sender, EventArgs e) { // Botón de igual
             miCalculadora.numero2 = float.Parse(textBox1.Text);
-            label4.Text += miCalculadora.numero2;
-            switch (operador) {
-                case "+":
-                    res = miCalculadora.Suma(miCalculadora.numero1, miCalculadora.numero2);
-                    break;
-                case "-":
-                    res = miCalculadora.Resta(miCalculadora.numero1, miCalculadora.numero2);
-                    break;
-                case "*":
-                    res = miCalculadora.Mult(miCalculadora.numero1, miCalculadora.numero2);
-                    break;
-                case "/":
-                    if (miCalculadora.numero2 != 0) {
-                        res = miCalculadora.Div(miCalculadora.numero1, miCalculadora.numero2);
-                    }
-                    break;
+            res = calcular();
+            if (textBox1.Text != res.ToString()) {
+                label4.Text += miCalculadora.numero2;
             }
             if (operador == "/" && miCalculadora.numero2 == 0) {
                 textBox1.Text = "Error";
@@ -62,6 +49,14 @@ namespace Tp6Calculadora {
         }
 
         private void button_Click(object sender, EventArgs e) {
+            agregarNumeros(sender);
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e) {
+            label4.Text = e.KeyChar.ToString();
+        }
+
+        private void agregarNumeros(object sender) {
             Button boton = (Button)sender;
             switch (boton.Text) {
                 case "+":
@@ -104,6 +99,31 @@ namespace Tp6Calculadora {
                 label4.Text = miCalculadora.numero1.ToString();
             }
             label4.Text += operador;
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e) {
+            textBox1.Text = e.KeyChar.ToString();
+            agregarNumeros(sender);
+        }
+
+        private float calcular() {
+            switch (operador) {
+                case "+":
+                    res = miCalculadora.Suma(miCalculadora.numero1, miCalculadora.numero2);
+                    break;
+                case "-":
+                    res = miCalculadora.Resta(miCalculadora.numero1, miCalculadora.numero2);
+                    break;
+                case "*":
+                    res = miCalculadora.Mult(miCalculadora.numero1, miCalculadora.numero2);
+                    break;
+                case "/":
+                    if (miCalculadora.numero2 != 0) {
+                        res = miCalculadora.Div(miCalculadora.numero1, miCalculadora.numero2);
+                    }
+                    break;
+            }
+            return res;
         }
     }
 }
