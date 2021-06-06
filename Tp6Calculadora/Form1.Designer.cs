@@ -69,7 +69,7 @@ namespace Tp6Calculadora {
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(8, 218);
+            this.button1.Location = new System.Drawing.Point(8, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(37, 33);
             this.button1.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace Tp6Calculadora {
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Location = new System.Drawing.Point(51, 218);
+            this.button2.Location = new System.Drawing.Point(51, 219);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(37, 33);
             this.button2.TabIndex = 4;
@@ -91,7 +91,7 @@ namespace Tp6Calculadora {
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.Location = new System.Drawing.Point(94, 218);
+            this.button3.Location = new System.Drawing.Point(94, 219);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(37, 33);
             this.button3.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace Tp6Calculadora {
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.Location = new System.Drawing.Point(8, 179);
+            this.button4.Location = new System.Drawing.Point(8, 180);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(37, 33);
             this.button4.TabIndex = 6;
@@ -113,7 +113,7 @@ namespace Tp6Calculadora {
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.Location = new System.Drawing.Point(51, 179);
+            this.button5.Location = new System.Drawing.Point(51, 180);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(37, 33);
             this.button5.TabIndex = 7;
@@ -124,7 +124,7 @@ namespace Tp6Calculadora {
             // button7
             // 
             this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button7.Location = new System.Drawing.Point(8, 140);
+            this.button7.Location = new System.Drawing.Point(8, 141);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(37, 33);
             this.button7.TabIndex = 9;
@@ -135,7 +135,7 @@ namespace Tp6Calculadora {
             // button8
             // 
             this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button8.Location = new System.Drawing.Point(51, 140);
+            this.button8.Location = new System.Drawing.Point(51, 141);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(37, 33);
             this.button8.TabIndex = 10;
@@ -146,7 +146,7 @@ namespace Tp6Calculadora {
             // button9
             // 
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button9.Location = new System.Drawing.Point(94, 140);
+            this.button9.Location = new System.Drawing.Point(94, 141);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(37, 33);
             this.button9.TabIndex = 11;
@@ -158,7 +158,7 @@ namespace Tp6Calculadora {
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(8, 61);
+            this.textBox1.Location = new System.Drawing.Point(8, 62);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(176, 34);
@@ -168,7 +168,7 @@ namespace Tp6Calculadora {
             // button10
             // 
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button10.Location = new System.Drawing.Point(137, 101);
+            this.button10.Location = new System.Drawing.Point(137, 102);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(50, 33);
             this.button10.TabIndex = 13;
@@ -179,7 +179,7 @@ namespace Tp6Calculadora {
             // button11
             // 
             this.button11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button11.Location = new System.Drawing.Point(137, 140);
+            this.button11.Location = new System.Drawing.Point(137, 141);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(50, 33);
             this.button11.TabIndex = 14;
@@ -190,7 +190,7 @@ namespace Tp6Calculadora {
             // button12
             // 
             this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button12.Location = new System.Drawing.Point(137, 179);
+            this.button12.Location = new System.Drawing.Point(137, 180);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(50, 33);
             this.button12.TabIndex = 15;
@@ -201,7 +201,7 @@ namespace Tp6Calculadora {
             // button13
             // 
             this.button13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button13.Location = new System.Drawing.Point(137, 218);
+            this.button13.Location = new System.Drawing.Point(137, 219);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(50, 33);
             this.button13.TabIndex = 16;
@@ -213,7 +213,7 @@ namespace Tp6Calculadora {
             // 
             this.button14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button14.Location = new System.Drawing.Point(8, 101);
+            this.button14.Location = new System.Drawing.Point(8, 102);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(123, 33);
             this.button14.TabIndex = 17;
@@ -224,7 +224,7 @@ namespace Tp6Calculadora {
             // button6
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.Location = new System.Drawing.Point(94, 179);
+            this.button6.Location = new System.Drawing.Point(94, 180);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(37, 33);
             this.button6.TabIndex = 18;
@@ -255,7 +255,7 @@ namespace Tp6Calculadora {
             // button15
             // 
             this.button15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button15.Location = new System.Drawing.Point(94, 257);
+            this.button15.Location = new System.Drawing.Point(94, 258);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(93, 33);
             this.button15.TabIndex = 21;
@@ -266,7 +266,7 @@ namespace Tp6Calculadora {
             // button16
             // 
             this.button16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button16.Location = new System.Drawing.Point(51, 257);
+            this.button16.Location = new System.Drawing.Point(51, 258);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(37, 33);
             this.button16.TabIndex = 22;
@@ -277,7 +277,7 @@ namespace Tp6Calculadora {
             // button17
             // 
             this.button17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button17.Location = new System.Drawing.Point(8, 257);
+            this.button17.Location = new System.Drawing.Point(8, 258);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(37, 33);
             this.button17.TabIndex = 23;
@@ -289,7 +289,7 @@ namespace Tp6Calculadora {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(199, 402);
+            this.ClientSize = new System.Drawing.Size(199, 405);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
